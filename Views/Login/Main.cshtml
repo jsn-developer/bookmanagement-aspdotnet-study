@@ -1,0 +1,50 @@
+@model BookManagementApp.Models.Person
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="spacer"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 text-center page-title">
+            <h1>ログイン</h1>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+@* エラーメッセージ出力部分 *@
+<p>@ViewData["Message"]</p>
+
+<form class="contianer" method="POST">
+    <div class="row spacer"></div>
+    <div class="row center-block">
+        <div class="col-md-4 offset-md-4 header">
+            <span>ログインID</span>
+        </div>
+    </div>
+    <div class="row center-block">
+        <div class="col-md-4 offset-md-4">
+            <input type="text" class="form-control" placeholder="example">
+        </div>
+    </div>
+    <div class="row center-block">
+        <div class="col-md-4 offset-md-4 header">
+            <span>パスワード</span>
+        </div>
+    </div>
+    <div class="row center-block">
+        <div class="col-md-4 offset-md-4">
+            <input type="password" class="form-control" placeholder="***">
+        </div>
+    </div>
+    <div class="row spacer">
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <a href="https://localhost:5001/BookManagement/" class="btn btn-fill btn-primary">ログイン</a>
+        </div>
+    </div>
+</form>
